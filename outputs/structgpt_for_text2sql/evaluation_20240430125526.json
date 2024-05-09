@@ -1,0 +1,1432 @@
+[
+    {
+        "id": 0,
+        "type": "numerical reasoning: one step",
+        "question": "2021年度，股票简称为深赛格的公司的稀释每股收益是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "sql_pred": "select 稀释每股收益 from income_statement where 年度 = 2021 and 股票简称 = '深赛格';",
+        "sql_real": "select `稀释每股收益` from income_statement where `股票简称` = '深赛格' and `年度` = '2021'",
+        "sql_correct": false,
+        "answer_pred": "0.0375",
+        "answer_real": "0.0375",
+        "answer_correct": true
+    },
+    {
+        "id": 1,
+        "type": "numerical reasoning: one step",
+        "question": "2022年度，股票简称为万科A的公司的营业收入是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "sql_pred": "select 营业收入 from income_statement where 年度 = 2022 and 股票简称 = '万科a';",
+        "sql_real": "select `营业收入` from income_statement where `股票简称` = '万科a' and `年度` = '2022'",
+        "sql_correct": false,
+        "answer_pred": "503838367358.76",
+        "answer_real": "503838367358.76",
+        "answer_correct": true
+    },
+    {
+        "id": 2,
+        "type": "numerical reasoning: one step",
+        "question": "2021年度，股票代码为32的公司的投资活动产生的现金流出小计是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "sql_pred": "select 投资活动产生的现金流出小计 from cash_flow_statement where 年度 = 2021 and 股票代码 = 32;",
+        "sql_real": "select `投资活动产生的现金流出小计` from cash_flow_statement where `股票代码` = '32' and `年度` = '2021'",
+        "sql_correct": false,
+        "answer_pred": "2011266109.57",
+        "answer_real": "2011266109.57",
+        "answer_correct": true
+    },
+    {
+        "id": 3,
+        "type": "numerical reasoning: one step",
+        "question": "2021年度，股票简称为深振业A的公司的归属少数股东的综合收益是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "sql_pred": "select 归属少数股东的综合收益 from income_statement where 年度 = 2021 and 股票简称 = '深振业a';",
+        "sql_real": "select `归属少数股东的综合收益` from income_statement where `股票简称` = '深振业a' and `年度` = '2021'",
+        "sql_correct": false,
+        "answer_pred": "11800034.71",
+        "answer_real": "11800034.71",
+        "answer_correct": true
+    },
+    {
+        "id": 4,
+        "type": "numerical reasoning: one step",
+        "question": "2021年度，股票代码为40的公司的筹资活动现金流入小计是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "sql_pred": "select 筹资活动现金流入小计 from cash_flow_statement where 年度 = '2021' and 股票代码 = '40';",
+        "sql_real": "select `筹资活动现金流入小计` from cash_flow_statement where `股票代码` = '40' and `年度` = '2021'",
+        "sql_correct": false,
+        "answer_pred": "664885613.1",
+        "answer_real": "664885613.1",
+        "answer_correct": true
+    },
+    {
+        "id": 5,
+        "type": "numerical reasoning: one step",
+        "question": "截止到2021-12-31，股票代码为34的公司的资产：应收款项融资是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 资产：应收款项融资 from balance_sheet where 股票代码 = 34 and 截止日期 = '2021-12-31';",
+        "sql_real": "select `资产：应收款项融资` from balance_sheet where `股票代码` = '34' and `截止日期` = '2021-12-31'",
+        "sql_correct": false,
+        "answer_pred": "286643309.73",
+        "answer_real": "286643309.73",
+        "answer_correct": true
+    },
+    {
+        "id": 6,
+        "type": "numerical reasoning: one step",
+        "question": "2021年度，股票代码为58的公司的取得借款收到的现金是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "sql_pred": "select 取得借款收到的现金 from cash_flow_statement where 年度 = 2021 and 股票代码 = 58;",
+        "sql_real": "select `取得借款收到的现金` from cash_flow_statement where `股票代码` = '58' and `年度` = '2021'",
+        "sql_correct": false,
+        "answer_pred": "126198418.0",
+        "answer_real": "126198418.0",
+        "answer_correct": true
+    },
+    {
+        "id": 7,
+        "type": "numerical reasoning: one step",
+        "question": "2021年度，股票简称为深物业A的公司的营业收入是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "sql_pred": "select 营业收入 from income_statement where 年度 = '2021' and 股票简称 = '深物业a';",
+        "sql_real": "select `营业收入` from income_statement where `股票简称` = '深物业a' and `年度` = '2021'",
+        "sql_correct": false,
+        "answer_pred": "4911120528.33",
+        "answer_real": "4911120528.33",
+        "answer_correct": true
+    },
+    {
+        "id": 8,
+        "type": "numerical reasoning: one step",
+        "question": "2022年度，股票代码为8的公司的经营活动现金流入小计是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "sql_pred": "select 经营活动现金流入小计 from cash_flow_statement where 年度 = 2022 and 股票代码 = 8;",
+        "sql_real": "select `经营活动现金流入小计` from cash_flow_statement where `股票代码` = '8' and `年度` = '2022'",
+        "sql_correct": false,
+        "answer_pred": "2711666817.55",
+        "answer_real": "2711666817.55",
+        "answer_correct": true
+    },
+    {
+        "id": 9,
+        "type": "numerical reasoning: one step",
+        "question": "2022年度，股票代码为5的公司的分配股利、利润或偿付利息支付的现金是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "sql_pred": "select 分配股利_利润_偿付利息支付的现金 from income_statement where 年度 = 2022 and 股票代码 = 5;",
+        "sql_real": "select `分配股利、利润或偿付利息支付的现金` from cash_flow_statement where `股票代码` = '5' and `年度` = '2022'",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "10167757.36",
+        "answer_correct": false
+    },
+    {
+        "id": 10,
+        "type": "numerical reasoning: one step",
+        "question": "2021年度，股票简称为深康佳A的公司的筹资活动现金流入小计是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "sql_pred": "select 筹资活动现金流入小计 from cash_flow_statement where 年度 = '2021' and 股票简称 = '深康佳a';",
+        "sql_real": "select `筹资活动现金流入小计` from cash_flow_statement where `股票简称` = '深康佳a' and `年度` = '2021'",
+        "sql_correct": false,
+        "answer_pred": "24829208403.38",
+        "answer_real": "24829208403.38",
+        "answer_correct": true
+    },
+    {
+        "id": 11,
+        "type": "numerical reasoning: one step",
+        "question": "2021年度，股票简称为华控赛格的公司的信用减值损失是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "sql_pred": "select 信用减值损失 from income_statement where 年度 = 2021 and 股票简称 = '华控赛格';",
+        "sql_real": "select `信用减值损失` from income_statement where `股票简称` = '华控赛格' and `年度` = '2021'",
+        "sql_correct": false,
+        "answer_pred": "-4214984.99",
+        "answer_real": "-4214984.99",
+        "answer_correct": true
+    },
+    {
+        "id": 12,
+        "type": "numerical reasoning: one step",
+        "question": "2021年度，股票简称为皇庭国际的公司的支付的各项税费是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "sql_pred": "select 税金及附加 from income_statement where 年度 = '2021' and 股票简称 = '皇庭国际';",
+        "sql_real": "select `支付的各项税费` from cash_flow_statement where `股票简称` = '皇庭国际' and `年度` = '2021'",
+        "sql_correct": false,
+        "answer_pred": "20635232.28",
+        "answer_real": "67886754.99",
+        "answer_correct": false
+    },
+    {
+        "id": 13,
+        "type": "numerical reasoning: one step",
+        "question": "2022年度，股票代码为66的公司的偿还债务支付的现金是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "sql_pred": "select 偿还债务支付的现金 from cash_flow_statement where 年度 = 2022 and 股票代码 = 66;",
+        "sql_real": "select `偿还债务支付的现金` from cash_flow_statement where `股票代码` = '66' and `年度` = '2022'",
+        "sql_correct": false,
+        "answer_pred": "8290971837.69",
+        "answer_real": "8290971837.69",
+        "answer_correct": true
+    },
+    {
+        "id": 14,
+        "type": "numerical reasoning: one step",
+        "question": "截止到2021-12-31，股票简称为深中华A的公司的资产：其他非流动资产是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 资产：其他非流动资产 from balance_sheet where 股票简称 = '深中华a' and 截止日期 = '2021-12-31';",
+        "sql_real": "select `资产：其他非流动资产` from balance_sheet where `股票简称` = '深中华a' and `截止日期` = '2021-12-31'",
+        "sql_correct": false,
+        "answer_pred": "400000.0",
+        "answer_real": "400000.0",
+        "answer_correct": true
+    },
+    {
+        "id": 15,
+        "type": "numerical reasoning: one step",
+        "question": "2022年度，股票代码为1的公司的支付的各项税费是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "sql_pred": "select 税金及附加 from income_statement where 年度 = 2022 and 股票代码 = 1;",
+        "sql_real": "select `支付的各项税费` from cash_flow_statement where `股票代码` = '1' and `年度` = '2022'",
+        "sql_correct": false,
+        "answer_pred": "1727000000.0",
+        "answer_real": "27713000000.0",
+        "answer_correct": false
+    },
+    {
+        "id": 16,
+        "type": "numerical reasoning: one step",
+        "question": "2022年度，股票简称为深纺织A的公司的综合收益总额是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "sql_pred": "select 综合收益总额 from income_statement where 年度 = 2022 and 股票简称 = '深纺织a';",
+        "sql_real": "select `综合收益总额` from income_statement where `股票简称` = '深纺织a' and `年度` = '2022'",
+        "sql_correct": false,
+        "answer_pred": "101587363.18",
+        "answer_real": "101587363.18",
+        "answer_correct": true
+    },
+    {
+        "id": 17,
+        "type": "numerical reasoning: one step",
+        "question": "2021年度，股票代码为5的公司的营业外收入是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "sql_pred": "select 营业外收入 from income_statement where 年度 = '2021' and 股票代码 = '5';",
+        "sql_real": "select `营业外收入` from income_statement where `股票代码` = '5' and `年度` = '2021'",
+        "sql_correct": false,
+        "answer_pred": "194565165.0",
+        "answer_real": "194565165.0",
+        "answer_correct": true
+    },
+    {
+        "id": 18,
+        "type": "numerical reasoning: one step",
+        "question": "2022年度，股票简称为深物业A的公司的取得借款收到的现金是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "sql_pred": "select 取得借款收到的现金 from cash_flow_statement where 年度 = 2022 and 股票简称 = '深物业a';",
+        "sql_real": "select `取得借款收到的现金` from cash_flow_statement where `股票简称` = '深物业a' and `年度` = '2022'",
+        "sql_correct": false,
+        "answer_pred": "285589674.44",
+        "answer_real": "285589674.44",
+        "answer_correct": true
+    },
+    {
+        "id": 19,
+        "type": "numerical reasoning: one step",
+        "question": "截止到2022-12-31，股票代码为5的公司的资产：应收款项融资是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 资产：应收款项融资 from balance_sheet where 股票代码 = 5 and 截止日期 = '2022-12-31';",
+        "sql_real": "select `资产：应收款项融资` from balance_sheet where `股票代码` = '5' and `截止日期` = '2022-12-31'",
+        "sql_correct": false,
+        "answer_pred": "3533004.31",
+        "answer_real": "3533004.31",
+        "answer_correct": true
+    },
+    {
+        "id": 20,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2021-12-31，股票简称为万科A的公司的资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select round((select sum(负债合计) from balance_sheet where 股票简称 = '万科a' and 截止日期 = '2021-12-31') \/ (select sum(资产总计) from balance_sheet where 股票简称 = '万科a' and 截止日期 = '2021-12-31'), 2) as 资产负债率;",
+        "sql_real": "select 负债合计 \/ 资产总计 as 资产负债率 from balance_sheet where 股票简称 = '万科a' and 截止日期 = '2021-12-31'",
+        "sql_correct": false,
+        "answer_pred": "0.8",
+        "answer_real": "0.7973975799244908",
+        "answer_correct": true
+    },
+    {
+        "id": 21,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2021-12-31，股票简称为深圳华强的公司的资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select round((select sum(负债合计) from balance_sheet where 股票简称 = '深圳华强' and 截止日期 = '2021-12-31') \/ (select sum(资产总计) from balance_sheet where 股票简称 = '深圳华强' and 截止日期 = '2021-12-31'), 2) as 资产负债率;",
+        "sql_real": "select 负债合计 \/ 资产总计 as 资产负债率 from balance_sheet where 股票简称 = '深圳华强' and 截止日期 = '2021-12-31'",
+        "sql_correct": false,
+        "answer_pred": "0.57",
+        "answer_real": "0.5689126702509406",
+        "answer_correct": true
+    },
+    {
+        "id": 22,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为美丽生态的公司的净资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select (负债合计 \/ 所有者权益合计) as 净资产负债率 from balance_sheet where 股票简称 = '美丽生态' and 截止日期 = '2022-12-31';",
+        "sql_real": "select 负债合计 \/ 所有者权益合计 as 净资产负债率 from balance_sheet where 股票简称 = '美丽生态' and 截止日期 = '2022-12-31'",
+        "sql_correct": false,
+        "answer_pred": "3.041248848990086",
+        "answer_real": "3.041248848990086",
+        "answer_correct": true
+    },
+    {
+        "id": 23,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2021-12-31，股票简称为大悦城的公司的资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select round((select sum(负债合计) from balance_sheet where 股票简称 = '大悦城' and 截止日期 = '2021-12-31') \/ (select sum(资产总计) from balance_sheet where 股票简称 = '大悦城' and 截止日期 = '2021-12-31'), 2) as 资产负债率;",
+        "sql_real": "select 负债合计 \/ 资产总计 as 资产负债率 from balance_sheet where 股票简称 = '大悦城' and 截止日期 = '2021-12-31'",
+        "sql_correct": false,
+        "answer_pred": "0.76",
+        "answer_real": "0.7551267481944259",
+        "answer_correct": true
+    },
+    {
+        "id": 24,
+        "type": "numerical reasoning: multi step",
+        "question": "2021年度，股票简称为中洲控股的公司的成本收入比是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "sql_pred": "select 营业成本 \/ 营业收入 as 成本收入比 from income_statement where 年度 = 2021 and 股票简称 = '中洲控股';",
+        "sql_real": "select 营业总成本 \/ 营业总收入 as 成本收入比 from income_statement where 股票简称 = '中洲控股' and 年度 = '2021'",
+        "sql_correct": false,
+        "answer_pred": "0.7045799752698009",
+        "answer_real": "0.9000835184660075",
+        "answer_correct": false
+    },
+    {
+        "id": 25,
+        "type": "numerical reasoning: multi step",
+        "question": "2022年度，股票简称为京基智农的公司的成本收入比是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "sql_pred": "select 营业成本 \/ 营业收入 as 成本收入比 from income_statement where 年度 = 2022 and 股票简称 = '京基智农';",
+        "sql_real": "select 营业总成本 \/ 营业总收入 as 成本收入比 from income_statement where 股票简称 = '京基智农' and 年度 = '2022'",
+        "sql_correct": false,
+        "answer_pred": "0.6626486711657087",
+        "answer_real": "0.8185769212052807",
+        "answer_correct": false
+    },
+    {
+        "id": 26,
+        "type": "numerical reasoning: multi step",
+        "question": "2021年度，股票简称为平安银行的公司的成本收入比是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "sql_pred": "select 营业成本 \/ 营业收入 as 成本收入比 from income_statement where 年度 = 2021 and 股票简称 = '平安银行';",
+        "sql_real": "select 营业总成本 \/ 营业总收入 as 成本收入比 from income_statement where 股票简称 = '平安银行' and 年度 = '2021'",
+        "sql_correct": false,
+        "answer_pred": "None",
+        "answer_real": "0.2927153256229964",
+        "answer_correct": false
+    },
+    {
+        "id": 27,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为中国长城的公司的资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select sum(负债合计) \/ sum(资产总计) as 资产负债率 from balance_sheet where 股票简称 = '中国长城' and 截止日期 = '2022-12-31';",
+        "sql_real": "select 负债合计 \/ 资产总计 as 资产负债率 from balance_sheet where 股票简称 = '中国长城' and 截止日期 = '2022-12-31'",
+        "sql_correct": false,
+        "answer_pred": "0.5616311114215363",
+        "answer_real": "0.5616311114215363",
+        "answer_correct": true
+    },
+    {
+        "id": 28,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2021-12-31，股票简称为深纺织A的公司的净资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select (负债合计 \/ 所有者权益合计) as 净资产负债率 from balance_sheet where 股票简称 = '深纺织a' and 截止日期 = '2021-12-31';",
+        "sql_real": "select 负债合计 \/ 所有者权益合计 as 净资产负债率 from balance_sheet where 股票简称 = '深纺织a' and 截止日期 = '2021-12-31'",
+        "sql_correct": false,
+        "answer_pred": "0.4067882012234693",
+        "answer_real": "0.4067882012234693",
+        "answer_correct": true
+    },
+    {
+        "id": 29,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为泛海控股的公司的资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 资产总计,负债合计, (负债合计 \/ 资产总计) as 资产负债率 from balance_sheet where 股票简称 = '泛海控股' and 截止日期 = '2022-12-31';",
+        "sql_real": "select 负债合计 \/ 资产总计 as 资产负债率 from balance_sheet where 股票简称 = '泛海控股' and 截止日期 = '2022-12-31'",
+        "sql_correct": false,
+        "answer_pred": "0.9914975701900035",
+        "answer_real": "0.9914975701900035",
+        "answer_correct": true
+    },
+    {
+        "id": 30,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2021-12-31，股票简称为深康佳A的公司的资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 资产总计 \/ 负债合计 as 资产负债率 from balance_sheet where 股票简称 = '深康佳a' and 截止日期 = '2021-12-31';",
+        "sql_real": "select 负债合计 \/ 资产总计 as 资产负债率 from balance_sheet where 股票简称 = '深康佳a' and 截止日期 = '2021-12-31'",
+        "sql_correct": false,
+        "answer_pred": "1.3437722141050294",
+        "answer_real": "0.7441737442577003",
+        "answer_correct": false
+    },
+    {
+        "id": 31,
+        "type": "numerical reasoning: multi step",
+        "question": "2021年度，股票简称为神州高铁的公司的成本收入比是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "sql_pred": "select 营业成本 \/ 营业收入 as 成本收入比 from income_statement where 年度 = 2021 and 股票简称 = '神州高铁';",
+        "sql_real": "select 营业总成本 \/ 营业总收入 as 成本收入比 from income_statement where 股票简称 = '神州高铁' and 年度 = '2021'",
+        "sql_correct": false,
+        "answer_pred": "0.66528850709439",
+        "answer_real": "1.1121775352785848",
+        "answer_correct": false
+    },
+    {
+        "id": 32,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2021-12-31，股票简称为华控赛格的公司的净资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select (负债合计 - 资产总计) \/ 资产总计 as 净资产负债率 from balance_sheet where 股票简称 = '华控赛格' and 截止日期 = '2021-12-31';",
+        "sql_real": "select 负债合计 \/ 所有者权益合计 as 净资产负债率 from balance_sheet where 股票简称 = '华控赛格' and 截止日期 = '2021-12-31'",
+        "sql_correct": false,
+        "answer_pred": "-0.1633664611418059",
+        "answer_real": "5.121207455990476",
+        "answer_correct": false
+    },
+    {
+        "id": 33,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为皇庭国际的公司的资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 资产总计,负债合计 from balance_sheet where 股票简称 = '皇庭国际' and 截止日期 = '2022-12-31';",
+        "sql_real": "select 负债合计 \/ 资产总计 as 资产负债率 from balance_sheet where 股票简称 = '皇庭国际' and 截止日期 = '2022-12-31'",
+        "sql_correct": false,
+        "answer_pred": "8033251381.33",
+        "answer_real": "0.7928162735270822",
+        "answer_correct": false
+    },
+    {
+        "id": 34,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为华锦股份的公司的净资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select (负债合计 \/ 所有者权益合计) as 净资产负债率 from balance_sheet where 股票简称 = '华锦股份' and 截止日期 = '2022-12-31';",
+        "sql_real": "select 负债合计 \/ 所有者权益合计 as 净资产负债率 from balance_sheet where 股票简称 = '华锦股份' and 截止日期 = '2022-12-31'",
+        "sql_correct": false,
+        "answer_pred": "1.1607464133984502",
+        "answer_real": "1.1607464133984502",
+        "answer_correct": true
+    },
+    {
+        "id": 35,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2021-12-31，股票简称为美丽生态的公司的净资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select (负债合计 \/ 所有者权益合计) as 净资产负债率 from balance_sheet where 股票简称 = '美丽生态' and 截止日期 = '2021-12-31';",
+        "sql_real": "select 负债合计 \/ 所有者权益合计 as 净资产负债率 from balance_sheet where 股票简称 = '美丽生态' and 截止日期 = '2021-12-31'",
+        "sql_correct": false,
+        "answer_pred": "4.344244353517529",
+        "answer_real": "4.344244353517529",
+        "answer_correct": true
+    },
+    {
+        "id": 36,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2021-12-31，股票简称为深华发A的公司的净资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select (负债合计 \/ (负债合计 + 所有者权益合计)) as 净资产负债率 from balance_sheet where 股票简称 = '深华发a' and 截止日期 = '2021-12-31';",
+        "sql_real": "select 负债合计 \/ 所有者权益合计 as 净资产负债率 from balance_sheet where 股票简称 = '深华发a' and 截止日期 = '2021-12-31'",
+        "sql_correct": false,
+        "answer_pred": "0.4795675895643025",
+        "answer_real": "0.9214791007401255",
+        "answer_correct": false
+    },
+    {
+        "id": 37,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2021-12-31，股票简称为东旭蓝天的公司的资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select round((select sum(负债合计) from balance_sheet where 股票简称 = '东旭蓝天' and 截止日期 = '2021-12-31') \/ (select sum(资产总计) from balance_sheet where 股票简称 = '东旭蓝天' and 截止日期 = '2021-12-31'), 2) as 资产负债率;",
+        "sql_real": "select 负债合计 \/ 资产总计 as 资产负债率 from balance_sheet where 股票简称 = '东旭蓝天' and 截止日期 = '2021-12-31'",
+        "sql_correct": false,
+        "answer_pred": "0.56",
+        "answer_real": "0.5571424428624323",
+        "answer_correct": true
+    },
+    {
+        "id": 38,
+        "type": "numerical reasoning: multi step",
+        "question": "2022年度，股票简称为深华发A的公司的成本收入比是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "sql_pred": "select 股票简称, 营业成本, 营业收入, 营业成本\/营业收入 as 成本收入比 from income_statement where 年度 = 2022 and 股票简称 = '深华发a';",
+        "sql_real": "select 营业总成本 \/ 营业总收入 as 成本收入比 from income_statement where 股票简称 = '深华发a' and 年度 = '2022'",
+        "sql_correct": false,
+        "answer_pred": "0.8952141371317958",
+        "answer_real": "0.9797742746563922",
+        "answer_correct": false
+    },
+    {
+        "id": 39,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为平安银行的公司的资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 资产总计, 负债合计, (负债合计*1.0\/资产总计) as 资产负债率 from balance_sheet where 股票简称 = '平安银行' and 截止日期 = '2022-12-31';",
+        "sql_real": "select 负债合计 \/ 资产总计 as 资产负债率 from balance_sheet where 股票简称 = '平安银行' and 截止日期 = '2022-12-31'",
+        "sql_correct": false,
+        "answer_pred": "0.9183164791072616",
+        "answer_real": "0.9183164791072616",
+        "answer_correct": true
+    },
+    {
+        "id": 40,
+        "type": "numerical reasoning: multi step",
+        "question": "2022年度，股票简称为中洲控股的公司的成本收入比是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "sql_pred": "select 股票简称, 营业成本 \/ 营业收入 as 成本收入比 from income_statement where 年度 = 2022 and 股票简称 = '中洲控股';",
+        "sql_real": "select 营业总成本 \/ 营业总收入 as 成本收入比 from income_statement where 股票简称 = '中洲控股' and 年度 = '2022'",
+        "sql_correct": false,
+        "answer_pred": "0.6419877059079634",
+        "answer_real": "0.9149494272032258",
+        "answer_correct": false
+    },
+    {
+        "id": 41,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为深纺织A的公司的资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select round((sum(负债合计) \/ sum(资产总计)), 2) as 资产负债率 from balance_sheet where 股票简称 = '深纺织a' and 截止日期 = '2022-12-31';",
+        "sql_real": "select 负债合计 \/ 资产总计 as 资产负债率 from balance_sheet where 股票简称 = '深纺织a' and 截止日期 = '2022-12-31'",
+        "sql_correct": false,
+        "answer_pred": "0.28",
+        "answer_real": "0.2823671451483429",
+        "answer_correct": true
+    },
+    {
+        "id": 42,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为东旭蓝天的公司的资产总计同比增长率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select ((select \"资产总计\" from balance_sheet where 股票简称 = '东旭蓝天' and 截止日期 = '2022-12-31') - (select \"资产总计\" from balance_sheet where 股票简称 = '东旭蓝天' and 截止日期 = '2021-12-31')) \/ (select \"资产总计\" from balance_sheet where 股票简称 = '东旭蓝天' and 截止日期 = '2021-12-31') * 100 as \"资产总计同比增长率\" from balance_sheet where 股票简称 = '东旭蓝天' and 截止日期 = '2022-12-31';",
+        "sql_real": "select ((select `资产总计` from balance_sheet where 股票简称 = '东旭蓝天' and 截止日期 = '2022-12-31') - (select `资产总计` from balance_sheet where 股票简称 = '东旭蓝天' and 截止日期 = '2021-12-31')) \/ (select `资产总计` from balance_sheet where 股票简称 = '东旭蓝天' and 截止日期 = '2021-12-31') as 同比增长率",
+        "sql_correct": false,
+        "answer_pred": "-2.597692082229826",
+        "answer_real": "-0.025976920822298258",
+        "answer_correct": true
+    },
+    {
+        "id": 43,
+        "type": "numerical reasoning: multi step",
+        "question": "2022年度，股票简称为飞亚达的公司的成本收入比是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "sql_pred": "select 营业成本 \/ 营业收入 as 成本收入比 from income_statement where 年度 = 2022 and 股票简称 = '飞亚达';",
+        "sql_real": "select 营业总成本 \/ 营业总收入 as 成本收入比 from income_statement where 股票简称 = '飞亚达' and 年度 = '2022'",
+        "sql_correct": false,
+        "answer_pred": "0.6290564648353759",
+        "answer_real": "0.9193405125034879",
+        "answer_correct": false
+    },
+    {
+        "id": 44,
+        "type": "numerical reasoning: multi step",
+        "question": "2022年度股票简称为深深房A的公司的筹资活动现金流入小计同比增长率是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "sql_pred": "select ((筹资活动现金流入小计 - (select 筹资活动现金流入小计 from cash_flow_statement where 年度=2021 and 股票简称='深深房a')) \/ (select 筹资活动现金流入小计 from cash_flow_statement where 年度=2021 and 股票简称='深深房a')) * 100 from cash_flow_statement where 年度=2022 and 股票简称='深深房a';",
+        "sql_real": "select ((select `筹资活动现金流入小计` from cash_flow_statement where 股票简称 = '深深房a' and 年度 = '2022') - (select `筹资活动现金流入小计` from cash_flow_statement where 股票简称 = '深深房a' and 年度 = '2021')) \/ (select `筹资活动现金流入小计` from cash_flow_statement where 股票简称 = '深深房a' and 年度 = '2021') as 同比增长率",
+        "sql_correct": false,
+        "answer_pred": "-58.15017419489982",
+        "answer_real": "-0.5815017419489982",
+        "answer_correct": true
+    },
+    {
+        "id": 45,
+        "type": "numerical reasoning: multi step",
+        "question": "2022年度股票简称为德赛电池的公司的取得借款收到的现金同比增长率是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "sql_pred": "select ((select 取得借款收到的现金 from cash_flow_statement where 年度 = 2022 and 股票简称 = '德赛电池') - (select 取得借款收到的现金 from cash_flow_statement where 年度 = 2021 and 股票简称 = '德赛电池')) \/ (select 取得借款收到的现金 from cash_flow_statement where 年度 = 2021 and 股票简称 = '德赛电池') * 100 as 同比增长率 from cash_flow_statement where 年度 = 2022 and 股票简称 = '德赛电池';",
+        "sql_real": "select ((select `取得借款收到的现金` from cash_flow_statement where 股票简称 = '德赛电池' and 年度 = '2022') - (select `取得借款收到的现金` from cash_flow_statement where 股票简称 = '德赛电池' and 年度 = '2021')) \/ (select `取得借款收到的现金` from cash_flow_statement where 股票简称 = '德赛电池' and 年度 = '2021') as 同比增长率",
+        "sql_correct": false,
+        "answer_pred": "61.65793809927834",
+        "answer_real": "0.6165793809927834",
+        "answer_correct": true
+    },
+    {
+        "id": 46,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为国药一致的公司的资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select round((sum(负债合计) \/ sum(资产总计)), 2) as 资产负债率 from balance_sheet where 股票简称 = '国药一致' and 截止日期 = '2022-12-31';",
+        "sql_real": "select 负债合计 \/ 资产总计 as 资产负债率 from balance_sheet where 股票简称 = '国药一致' and 截止日期 = '2022-12-31'",
+        "sql_correct": false,
+        "answer_pred": "0.54",
+        "answer_real": "0.5437202948771775",
+        "answer_correct": true
+    },
+    {
+        "id": 47,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为北方国际的公司的净资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select (负债合计 \/ 所有者权益合计) as 净资产负债率 from balance_sheet where 股票简称 = '北方国际' and 截止日期 = '2022-12-31';",
+        "sql_real": "select 负债合计 \/ 所有者权益合计 as 净资产负债率 from balance_sheet where 股票简称 = '北方国际' and 截止日期 = '2022-12-31'",
+        "sql_correct": false,
+        "answer_pred": "1.5799867407542731",
+        "answer_real": "1.5799867407542731",
+        "answer_correct": true
+    },
+    {
+        "id": 48,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为中集集团的公司的资产：应收票据净额同比增长率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select ((应收票据净额 - lag(应收票据净额, 1) over (order by 截止日期)) \/ lag(应收票据净额, 1) over (order by 截止日期)) * 100 as 应收票据净额同比增长率 from balance_sheet where 股票简称 = '中集集团' and 截止日期 = '2022-12-31';",
+        "sql_real": "select ((select `资产：应收票据净额` from balance_sheet where 股票简称 = '中集集团' and 截止日期 = '2022-12-31') - (select `资产：应收票据净额` from balance_sheet where 股票简称 = '中集集团' and 截止日期 = '2021-12-31')) \/ (select `资产：应收票据净额` from balance_sheet where 股票简称 = '中集集团' and 截止日期 = '2021-12-31') as 同比增长率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "-0.3257557217121253",
+        "answer_correct": false
+    },
+    {
+        "id": 49,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为华联控股的公司的资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select round((sum(负债合计) \/ sum(资产总计)), 2) as 资产负债率 from balance_sheet where 股票简称 = '华联控股' and 截止日期 = '2022-12-31';",
+        "sql_real": "select 负债合计 \/ 资产总计 as 资产负债率 from balance_sheet where 股票简称 = '华联控股' and 截止日期 = '2022-12-31'",
+        "sql_correct": false,
+        "answer_pred": "0.32",
+        "answer_real": "0.3222535740015797",
+        "answer_correct": true
+    },
+    {
+        "id": 50,
+        "type": "numerical reasoning: multi table",
+        "question": "2022年度，股票简称为神州数码的公司的净资产收益率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 净利润 \/ 资产总计 as 净资产收益率 from income_statement join balance_sheet on income_statement.股票代码 = balance_sheet.股票代码 where 年度 = 2022 and 股票简称 = '神州数码';",
+        "sql_real": "select (select 净利润 from income_statement where 股票简称 = '神州数码' and 年度 = '2022') \/ (select 所有者权益合计 from balance_sheet where 股票简称 = '神州数码' and 截止日期 like '%2022%') as 净资产收益率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "0.12603732349678018",
+        "answer_correct": false
+    },
+    {
+        "id": 51,
+        "type": "numerical reasoning: multi table",
+        "question": "2021年度，股票简称为深华发A的公司的总资产收益率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 股本, 股本 from balance_sheet where 股票简称 = '深华发a' and 截止日期 = '2021年度';",
+        "sql_real": "select (select 净利润 from income_statement where 股票简称 = '深华发a' and 年度 = '2021') \/ (select 资产总计 from balance_sheet where 股票简称 = '深华发a' and 截止日期 like '%2021%') as 总资产收益率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "0.01091307687043571",
+        "answer_correct": false
+    },
+    {
+        "id": 52,
+        "type": "numerical reasoning: multi table",
+        "question": "2021年度，股票简称为农产品的公司的总资产收益率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 股票简称, (净利润 \/ 总资产) as 总资产收益率 from income_statement where 年度 = 2021 and 股票简称 = '农产品';",
+        "sql_real": "select (select 净利润 from income_statement where 股票简称 = '农产品' and 年度 = '2021') \/ (select 资产总计 from balance_sheet where 股票简称 = '农产品' and 截止日期 like '%2021%') as 总资产收益率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "0.023976010664315234",
+        "answer_correct": false
+    },
+    {
+        "id": 53,
+        "type": "numerical reasoning: multi table",
+        "question": "2022年度，股票简称为泛海控股的公司的总资产收益率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select (负债与所有者权益总计 \/ 资产总计) * 100 from balance_sheet where 股票简称 = '泛海控股' and 年度 = 2022;",
+        "sql_real": "select (select 净利润 from income_statement where 股票简称 = '泛海控股' and 年度 = '2022') \/ (select 资产总计 from balance_sheet where 股票简称 = '泛海控股' and 截止日期 like '%2022%') as 总资产收益率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "-0.12635647996037036",
+        "answer_correct": false
+    },
+    {
+        "id": 54,
+        "type": "numerical reasoning: multi table",
+        "question": "股票简称为深圳华强的公司的总资产周转率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 资产总计 \/ 流动资产合计 as 总资产周转率 from balance_sheet where 股票简称 = '深圳华强';",
+        "sql_real": "select (select 营业收入 from income_statement where 股票简称 = '深圳华强' and 年度 = '2022') \/ (((select 资产总计 from balance_sheet where 股票简称 = '深圳华强' and 截止日期 = '2022-12-31') + (select 资产总计 from balance_sheet where 股票简称 = '深圳华强' and 截止日期 = '2021-12-31')) \/ 2) as 总资产周转率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "1.4902627249308782",
+        "answer_correct": false
+    },
+    {
+        "id": 55,
+        "type": "numerical reasoning: multi table",
+        "question": "2021年度，股票简称为京基智农的公司的净资产收益率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 净利润 \/ nullif(净资产, 0) as 净资产收益率 from income_statement where 年度 = 2021 and 股票简称 = '京基智农';",
+        "sql_real": "select (select 净利润 from income_statement where 股票简称 = '京基智农' and 年度 = '2021') \/ (select 所有者权益合计 from balance_sheet where 股票简称 = '京基智农' and 截止日期 like '%2021%') as 净资产收益率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "0.15575086956849443",
+        "answer_correct": false
+    },
+    {
+        "id": 56,
+        "type": "numerical reasoning: multi table",
+        "question": "股票简称为神州数码的公司的总资产周转率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 资产总计 \/ 营业总收入 as 总资产周转率 from balance_sheet where 股票简称 = '神州数码';",
+        "sql_real": "select (select 营业收入 from income_statement where 股票简称 = '神州数码' and 年度 = '2022') \/ (((select 资产总计 from balance_sheet where 股票简称 = '神州数码' and 截止日期 = '2022-12-31') + (select 资产总计 from balance_sheet where 股票简称 = '神州数码' and 截止日期 = '2021-12-31')) \/ 2) as 总资产周转率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "2.9254507723334044",
+        "answer_correct": false
+    },
+    {
+        "id": 57,
+        "type": "numerical reasoning: multi table",
+        "question": "2021年度，股票简称为泛海控股的公司的净资产收益率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 净利润 \/ 所有者权益合计 as 净资产收益率 from income_statement join balance_sheet on income_statement.股票代码 = balance_sheet.股票代码 where 年度 = 2021 and 股票简称 = '泛海控股';",
+        "sql_real": "select (select 净利润 from income_statement where 股票简称 = '泛海控股' and 年度 = '2021') \/ (select 所有者权益合计 from balance_sheet where 股票简称 = '泛海控股' and 截止日期 like '%2021%') as 净资产收益率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "-0.9502435887464763",
+        "answer_correct": false
+    },
+    {
+        "id": 58,
+        "type": "numerical reasoning: multi table",
+        "question": "股票简称为南玻A的公司的总资产周转率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 资产总计 \/ 营业总收入 as 总资产周转率 from balance_sheet where 股票简称 = '南玻a';",
+        "sql_real": "select (select 营业收入 from income_statement where 股票简称 = '南玻a' and 年度 = '2022') \/ (((select 资产总计 from balance_sheet where 股票简称 = '南玻a' and 截止日期 = '2022-12-31') + (select 资产总计 from balance_sheet where 股票简称 = '南玻a' and 截止日期 = '2021-12-31')) \/ 2) as 总资产周转率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "0.6631210749451611",
+        "answer_correct": false
+    },
+    {
+        "id": 59,
+        "type": "numerical reasoning: multi table",
+        "question": "2022年度，股票简称为沙河股份的公司的净资产收益率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 净利润 \/ nullif(净资产, 0) as 净资产收益率 from income_statement where 年度 = 2022 and 股票简称 = '沙河股份';",
+        "sql_real": "select (select 净利润 from income_statement where 股票简称 = '沙河股份' and 年度 = '2022') \/ (select 所有者权益合计 from balance_sheet where 股票简称 = '沙河股份' and 截止日期 like '%2022%') as 净资产收益率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "0.2034241499650844",
+        "answer_correct": false
+    },
+    {
+        "id": 60,
+        "type": "numerical reasoning: multi table",
+        "question": "2022年度，股票简称为华控赛格的公司的总资产收益率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select (net_income \/ total_assets) * 100 as roa from income_statement join balance_sheet on income_statement.stock_code = balance_sheet.stock_code where income_statement.year = 2022 and income_statement.stock_name = '华控赛格';",
+        "sql_real": "select (select 净利润 from income_statement where 股票简称 = '华控赛格' and 年度 = '2022') \/ (select 资产总计 from balance_sheet where 股票简称 = '华控赛格' and 截止日期 like '%2022%') as 总资产收益率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "-0.054387033595549195",
+        "answer_correct": false
+    },
+    {
+        "id": 61,
+        "type": "numerical reasoning: multi table",
+        "question": "2022年度，股票简称为深赛格的公司的净资产收益率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 净利润 \/ 资产总计 as 净资产收益率 from income_statement join balance_sheet on income_statement.股票代码 = balance_sheet.股票代码 where 年度 = 2022 and 股票简称 = '深赛格';",
+        "sql_real": "select (select 净利润 from income_statement where 股票简称 = '深赛格' and 年度 = '2022') \/ (select 所有者权益合计 from balance_sheet where 股票简称 = '深赛格' and 截止日期 like '%2022%') as 净资产收益率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "0.016333000418691495",
+        "answer_correct": false
+    },
+    {
+        "id": 62,
+        "type": "numerical reasoning: multi table",
+        "question": "股票简称为飞亚达的公司的总资产周转率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 资产总计 \/ 营业总收入 as 总资产周转率 from balance_sheet where 股票简称 = '飞亚达';",
+        "sql_real": "select (select 营业收入 from income_statement where 股票简称 = '飞亚达' and 年度 = '2022') \/ (((select 资产总计 from balance_sheet where 股票简称 = '飞亚达' and 截止日期 = '2022-12-31') + (select 资产总计 from balance_sheet where 股票简称 = '飞亚达' and 截止日期 = '2021-12-31')) \/ 2) as 总资产周转率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "1.0583964537645998",
+        "answer_correct": false
+    },
+    {
+        "id": 63,
+        "type": "numerical reasoning: multi table",
+        "question": "2021年度，股票简称为德赛电池的公司的净资产收益率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 净利润 \/ 所有者权益合计 as 净资产收益率 from income_statement join balance_sheet on income_statement.股票代码 = balance_sheet.股票代码 where 年度 = 2021 and 股票简称 = '德赛电池';",
+        "sql_real": "select (select 净利润 from income_statement where 股票简称 = '德赛电池' and 年度 = '2021') \/ (select 所有者权益合计 from balance_sheet where 股票简称 = '德赛电池' and 截止日期 like '%2021%') as 净资产收益率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "0.23151527001761874",
+        "answer_correct": false
+    },
+    {
+        "id": 64,
+        "type": "numerical reasoning: multi table",
+        "question": "2021年度，股票简称为特力A的公司的总资产收益率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select (净利润 \/ 总资产) as 总资产收益率 from income_statement where 年度 = 2021 and 股票简称 = '特力a';",
+        "sql_real": "select (select 净利润 from income_statement where 股票简称 = '特力a' and 年度 = '2021') \/ (select 资产总计 from balance_sheet where 股票简称 = '特力a' and 截止日期 like '%2021%') as 总资产收益率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "0.0710095295029494",
+        "answer_correct": false
+    },
+    {
+        "id": 65,
+        "type": "numerical reasoning: multi table",
+        "question": "2022年度，股票简称为德赛电池的公司的总资产收益率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select (负债与所有者权益总计 \/ 资产总计) * 100 from balance_sheet where 股票简称 = '德赛电池' and 年度 = 2022;",
+        "sql_real": "select (select 净利润 from income_statement where 股票简称 = '德赛电池' and 年度 = '2022') \/ (select 资产总计 from balance_sheet where 股票简称 = '德赛电池' and 截止日期 like '%2022%') as 总资产收益率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "0.06810856708020166",
+        "answer_correct": false
+    },
+    {
+        "id": 66,
+        "type": "numerical reasoning: multi table",
+        "question": "2021年度，股票简称为ST 星源的公司的总资产收益率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select (净利润 \/ 总资产) * 100 as 总资产收益率 from income_statement where 年度 = 2021 and 股票简称 = 'st 星源';",
+        "sql_real": "select (select 净利润 from income_statement where 股票简称 = 'st 星源' and 年度 = '2021') \/ (select 资产总计 from balance_sheet where 股票简称 = 'st 星源' and 截止日期 like '%2021%') as 总资产收益率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "0.05636209863049044",
+        "answer_correct": false
+    },
+    {
+        "id": 67,
+        "type": "numerical reasoning: multi table",
+        "question": "2021年度，股票简称为深南电A的公司的总资产收益率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select (net_income \/ total_assets) * 100 as roa from income_statement join balance_sheet on income_statement.股票代码 = balance_sheet.股票代码 where income_statement.年度 = 2021 and balance_sheet.股票简称 = '深南电a';",
+        "sql_real": "select (select 净利润 from income_statement where 股票简称 = '深南电a' and 年度 = '2021') \/ (select 资产总计 from balance_sheet where 股票简称 = '深南电a' and 截止日期 like '%2021%') as 总资产收益率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "-0.1825806775868489",
+        "answer_correct": false
+    },
+    {
+        "id": 68,
+        "type": "numerical reasoning: multi table",
+        "question": "2021年度，股票简称为国药一致的公司的净资产收益率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 净利润 \/ 资产总计 as 净资产收益率 from income_statement join balance_sheet on income_statement.股票代码 = balance_sheet.股票代码 where 年度 = 2021 and 股票简称 = '国药一致';",
+        "sql_real": "select (select 净利润 from income_statement where 股票简称 = '国药一致' and 年度 = '2021') \/ (select 所有者权益合计 from balance_sheet where 股票简称 = '国药一致' and 截止日期 like '%2021%') as 净资产收益率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "0.08476440825699202",
+        "answer_correct": false
+    },
+    {
+        "id": 69,
+        "type": "numerical reasoning: multi table",
+        "question": "股票简称为深振业A的公司的总资产周转率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 资产总计 \/ 营业总收入 as 总资产周转率 from balance_sheet where 股票简称 = '深振业a';",
+        "sql_real": "select (select 营业收入 from income_statement where 股票简称 = '深振业a' and 年度 = '2022') \/ (((select 资产总计 from balance_sheet where 股票简称 = '深振业a' and 截止日期 = '2022-12-31') + (select 资产总计 from balance_sheet where 股票简称 = '深振业a' and 截止日期 = '2021-12-31')) \/ 2) as 总资产周转率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "0.14799227386018396",
+        "answer_correct": false
+    },
+    {
+        "id": 70,
+        "type": "numerical reasoning: multi table",
+        "question": "股票简称为深康佳A的公司的总资产周转率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 资产总计 \/ nullif(流动资产合计 + 非流动资产合计, 0) as 总资产周转率 from balance_sheet where 股票简称 = '深康佳a';",
+        "sql_real": "select (select 营业收入 from income_statement where 股票简称 = '深康佳a' and 年度 = '2022') \/ (((select 资产总计 from balance_sheet where 股票简称 = '深康佳a' and 截止日期 = '2022-12-31') + (select 资产总计 from balance_sheet where 股票简称 = '深康佳a' and 截止日期 = '2021-12-31')) \/ 2) as 总资产周转率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "0.7602392191068925",
+        "answer_correct": false
+    },
+    {
+        "id": 71,
+        "type": "numerical reasoning: multi table",
+        "question": "2021年度，股票简称为方大集团的公司的净资产收益率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 净利润 \/ nullif(净资产, 0) as 净资产收益率 from income_statement where 年度 = 2021 and 股票简称 = '方大集团';",
+        "sql_real": "select (select 净利润 from income_statement where 股票简称 = '方大集团' and 年度 = '2021') \/ (select 所有者权益合计 from balance_sheet where 股票简称 = '方大集团' and 截止日期 like '%2021%') as 净资产收益率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "0.04056345094812549",
+        "answer_correct": false
+    },
+    {
+        "id": 72,
+        "type": "numerical reasoning: multi table",
+        "question": "2022年度，股票简称为深深房A的公司的净资产收益率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 净利润 \/ nullif(净资产, 0) as 净资产收益率 from income_statement where 年度 = 2022 and 股票简称 = '深深房a';",
+        "sql_real": "select (select 净利润 from income_statement where 股票简称 = '深深房a' and 年度 = '2022') \/ (select 所有者权益合计 from balance_sheet where 股票简称 = '深深房a' and 截止日期 like '%2022%') as 净资产收益率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "0.03489453240119923",
+        "answer_correct": false
+    },
+    {
+        "id": 73,
+        "type": "numerical reasoning: multi table",
+        "question": "2021年度，股票简称为深康佳A的公司的净资产收益率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 净利润 \/ 资产总计 as 净资产收益率 from income_statement join balance_sheet on income_statement.股票代码 = balance_sheet.股票代码 where 年度 = 2021 and 股票简称 = '深康佳a';",
+        "sql_real": "select (select 净利润 from income_statement where 股票简称 = '深康佳a' and 年度 = '2021') \/ (select 所有者权益合计 from balance_sheet where 股票简称 = '深康佳a' and 截止日期 like '%2021%') as 净资产收益率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "0.0790809559528062",
+        "answer_correct": false
+    },
+    {
+        "id": 74,
+        "type": "numerical reasoning: multi table",
+        "question": "2021年度，股票简称为北方国际的公司的总资产收益率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select (net_income \/ total_assets) * 100 as roa from income_statement join balance_sheet on income_statement.股票代码 = balance_sheet.股票代码 where income_statement.年度 = 2021 and balance_sheet.股票简称 = '北方国际';",
+        "sql_real": "select (select 净利润 from income_statement where 股票简称 = '北方国际' and 年度 = '2021') \/ (select 资产总计 from balance_sheet where 股票简称 = '北方国际' and 截止日期 like '%2021%') as 总资产收益率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "0.03500105231400973",
+        "answer_correct": false
+    },
+    {
+        "id": 75,
+        "type": "numerical reasoning: multi table",
+        "question": "2021年度，股票简称为神州高铁的公司的总资产收益率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select (净利润 \/ 资产总计) * 100 as 总资产收益率 from income_statement where 股票简称 = '神州高铁' and 年度 = 2021;",
+        "sql_real": "select (select 净利润 from income_statement where 股票简称 = '神州高铁' and 年度 = '2021') \/ (select 资产总计 from balance_sheet where 股票简称 = '神州高铁' and 截止日期 like '%2021%') as 总资产收益率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "-0.1113292289737463",
+        "answer_correct": false
+    },
+    {
+        "id": 76,
+        "type": "numerical reasoning: multi table",
+        "question": "2021年度，股票简称为华锦股份的公司的净资产收益率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 净利润 \/ nullif(净资产, 0) as 净资产收益率 from income_statement where 年度 = 2021 and 股票简称 = '华锦股份';",
+        "sql_real": "select (select 净利润 from income_statement where 股票简称 = '华锦股份' and 年度 = '2021') \/ (select 所有者权益合计 from balance_sheet where 股票简称 = '华锦股份' and 截止日期 like '%2021%') as 净资产收益率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "0.06600710096443925",
+        "answer_correct": false
+    },
+    {
+        "id": 77,
+        "type": "numerical reasoning: multi table",
+        "question": "2022年度，股票简称为美丽生态的公司的总资产收益率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本, 股本,",
+        "sql_real": "select (select 净利润 from income_statement where 股票简称 = '美丽生态' and 年度 = '2022') \/ (select 资产总计 from balance_sheet where 股票简称 = '美丽生态' and 截止日期 like '%2022%') as 总资产收益率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "-0.18952212528987225",
+        "answer_correct": false
+    },
+    {
+        "id": 78,
+        "type": "numerical reasoning: multi table",
+        "question": "股票简称为京基智农的公司的总资产周转率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 资产总计 \/ 营业总收入 as 总资产周转率 from balance_sheet where 股票简称 = '京基智农';",
+        "sql_real": "select (select 营业收入 from income_statement where 股票简称 = '京基智农' and 年度 = '2022') \/ (((select 资产总计 from balance_sheet where 股票简称 = '京基智农' and 截止日期 = '2022-12-31') + (select 资产总计 from balance_sheet where 股票简称 = '京基智农' and 截止日期 = '2021-12-31')) \/ 2) as 总资产周转率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "0.3704611864310975",
+        "answer_correct": false
+    },
+    {
+        "id": 79,
+        "type": "numerical reasoning: multi table",
+        "question": "股票简称为国药一致的公司的总资产周转率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 资产总计 \/ 营业总收入 as 总资产周转率 from balance_sheet where 股票简称 = '国药一致';",
+        "sql_real": "select (select 营业收入 from income_statement where 股票简称 = '国药一致' and 年度 = '2022') \/ (((select 资产总计 from balance_sheet where 股票简称 = '国药一致' and 截止日期 = '2022-12-31') + (select 资产总计 from balance_sheet where 股票简称 = '国药一致' and 截止日期 = '2021-12-31')) \/ 2) as 总资产周转率",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "1.7199910069718427",
+        "answer_correct": false
+    },
+    {
+        "id": 80,
+        "type": "table reasoning",
+        "question": "2022年度，哪家公司在净利润上的值是最小的？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "sql_pred": "select 公司全称 from income_statement where 年度 = 2022 order by 净利润 limit 1;",
+        "sql_real": "select 公司全称 from income_statement where 年度 = '2022' order by 净利润 asc limit 1",
+        "sql_correct": false,
+        "answer_pred": "泛海控股股份有限公司",
+        "answer_real": "泛海控股股份有限公司",
+        "answer_correct": true
+    },
+    {
+        "id": 81,
+        "type": "table reasoning",
+        "question": "截止到2022-12-31，哪家公司在所有者权益：盈余公积上的值是最大的？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 公司全称 from balance_sheet where 截止日期 = '2022-12-31' order by 所有者权益：盈余公积 desc limit 1;",
+        "sql_real": "select 公司全称 from balance_sheet where 截止日期 = '2022-12-31' order by 所有者权益：盈余公积 desc limit 1",
+        "sql_correct": false,
+        "answer_pred": "万科企业股份有限公司",
+        "answer_real": "万科企业股份有限公司",
+        "answer_correct": true
+    },
+    {
+        "id": 82,
+        "type": "table reasoning",
+        "question": "截止到2022-12-31，哪家公司在所有者权益：实收资本（或股本）上的值是最小的？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 公司全称 from balance_sheet where 截止日期 = '2022-12-31' order by 所有者权益：实收资本（或股本） asc limit 1;",
+        "sql_real": "select 公司全称 from balance_sheet where 截止日期 = '2022-12-31' order by 所有者权益：实收资本（或股本） asc limit 1",
+        "sql_correct": false,
+        "answer_pred": "深圳国华网安科技股份有限公司",
+        "answer_real": "深圳国华网安科技股份有限公司",
+        "answer_correct": true
+    },
+    {
+        "id": 83,
+        "type": "table reasoning",
+        "question": "截止到2022-12-31，哪家公司在所有者权益：未分配利润上的值是最小的？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 公司全称 from balance_sheet where 截止日期 = '2022-12-31' order by 所有者权益：未分配利润 limit 1;",
+        "sql_real": "select 公司全称 from balance_sheet where 截止日期 = '2022-12-31' order by 所有者权益：未分配利润 asc limit 1",
+        "sql_correct": false,
+        "answer_pred": "泛海控股股份有限公司",
+        "answer_real": "泛海控股股份有限公司",
+        "answer_correct": true
+    },
+    {
+        "id": 84,
+        "type": "table reasoning",
+        "question": "2022年度，哪家公司在筹资活动现金流出小计上的值是最大的？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "sql_pred": "select 公司全称, 筹资活动现金流出小计 from cash_flow_statement where 年度 = 2022 order by 筹资活动现金流出小计 desc limit 1;",
+        "sql_real": "select 公司全称 from cash_flow_statement where 年度 = '2022' order by 筹资活动现金流出小计 desc limit 1",
+        "sql_correct": false,
+        "answer_pred": "平安银行股份有限公司",
+        "answer_real": "平安银行股份有限公司",
+        "answer_correct": true
+    },
+    {
+        "id": 85,
+        "type": "table reasoning",
+        "question": "截止到2022-12-31，哪家公司在资产：递延所得税资产上的值是最小的？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 公司全称 from balance_sheet where 截止日期 = '2022-12-31' order by 资产：递延所得税资产 limit 1;",
+        "sql_real": "select 公司全称 from balance_sheet where 截止日期 = '2022-12-31' order by 资产：递延所得税资产 asc limit 1",
+        "sql_correct": false,
+        "answer_pred": "深圳市全新好股份有限公司",
+        "answer_real": "深圳市全新好股份有限公司",
+        "answer_correct": true
+    },
+    {
+        "id": 86,
+        "type": "table reasoning",
+        "question": "2022年度，哪家公司在综合收益总额上的值是最大的？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "sql_pred": "select 公司全称 from income_statement where 年度 = 2022 order by 综合收益总额 desc limit 1;",
+        "sql_real": "select 公司全称 from income_statement where 年度 = '2022' order by 综合收益总额 desc limit 1",
+        "sql_correct": false,
+        "answer_pred": "平安银行股份有限公司",
+        "answer_real": "平安银行股份有限公司",
+        "answer_correct": true
+    },
+    {
+        "id": 87,
+        "type": "table reasoning",
+        "question": "2022年度，哪家公司在信用减值损失上的值是最大的？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "sql_pred": "select 公司全称 from income_statement where 年度 = 2022 order by 信用减值损失 desc limit 1;",
+        "sql_real": "select 公司全称 from income_statement where 年度 = '2022' order by 信用减值损失 desc limit 1",
+        "sql_correct": false,
+        "answer_pred": "深圳市中金岭南有色金属股份有限公司",
+        "answer_real": "深圳市中金岭南有色金属股份有限公司",
+        "answer_correct": true
+    },
+    {
+        "id": 88,
+        "type": "table reasoning",
+        "question": "2022年度，哪家公司在经营活动现金流入小计上的值是最大的？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "sql_pred": "select 公司全称 from cash_flow_statement where 年度 = 2022 order by 经营活动现金流入小计 desc limit 1;",
+        "sql_real": "select 公司全称 from cash_flow_statement where 年度 = '2022' order by 经营活动现金流入小计 desc limit 1",
+        "sql_correct": false,
+        "answer_pred": "平安银行股份有限公司",
+        "answer_real": "平安银行股份有限公司",
+        "answer_correct": true
+    },
+    {
+        "id": 89,
+        "type": "table reasoning",
+        "question": "2022年度，哪家公司在支付给职工以及为职工支付的现金上的值是最小的？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "sql_pred": "select 公司全称, 支付给职工以及为职工支付的现金 from cash_flow_statement where 年度 = 2022 order by 支付给职工以及为职工支付的现金 limit 1;",
+        "sql_real": "select 公司全称 from cash_flow_statement where 年度 = '2022' order by 支付给职工以及为职工支付的现金 asc limit 1",
+        "sql_correct": false,
+        "answer_pred": "深圳中华自行车(集团)股份有限公司",
+        "answer_real": "深圳中华自行车(集团)股份有限公司",
+        "answer_correct": true
+    },
+    {
+        "id": 90,
+        "type": "fuzzy",
+        "question": "2021年深圳华侨城的投资活动产生的现金流量净额是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "sql_pred": "select 投资活动产生的现金流量净额 from cash_flow_statement where 公司全称 = '深圳华侨城' and 年度 = 2021;",
+        "sql_real": "select `投资活动产生的现金流量净额` from cash_flow_statement where `公司全称` like '%深圳华侨城%' and 年度 like '%2021%'",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "-3944707567.55",
+        "answer_correct": false
+    },
+    {
+        "id": 91,
+        "type": "fuzzy",
+        "question": "2021年深圳市深粮控股的负债：一年内到期的非流动负债是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 一年内到期的非流动负债 from balance_sheet where 公司全称 = '深圳市深粮控股' and 截止日期 = '2021' limit 1;",
+        "sql_real": "select `负债：一年内到期的非流动负债` from balance_sheet where `公司全称` like '%深圳市深粮控股%' and 截止日期 like '%2021%'",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "128732475.16",
+        "answer_correct": false
+    },
+    {
+        "id": 92,
+        "type": "fuzzy",
+        "question": "2021年深圳能源集团的资产：无形资产净额是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 资产：无形资产净额 from balance_sheet where 公司全称 = '2021年深圳能源集团';",
+        "sql_real": "select `资产：无形资产净额` from balance_sheet where `公司全称` like '%深圳能源集团%' and 截止日期 like '%2021%'",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "16446469048.97",
+        "answer_correct": false
+    },
+    {
+        "id": 93,
+        "type": "fuzzy",
+        "question": "2021年深圳华强实业的收到其他与筹资活动有关的现金是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "sql_pred": "select 收到其他与筹资活动有关的现金 from cash_flow_statement where 年度 = 2021 and 公司全称 = '深圳华强实业';",
+        "sql_real": "select `收到其他与筹资活动有关的现金` from cash_flow_statement where `公司全称` like '%深圳华强实业%' and 年度 like '%2021%'",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "262017.32",
+        "answer_correct": false
+    },
+    {
+        "id": 94,
+        "type": "fuzzy",
+        "question": "2021年深圳国华网安科技的资产减值损失是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "sql_pred": "select 资产减值损失 from income_statement where 年度 = '2021' and 公司全称 = '深圳国华网安科技';",
+        "sql_real": "select `资产减值损失` from income_statement where `公司全称` like '%深圳国华网安科技%' and 年度 like '%2021%'",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "-556578488.37",
+        "answer_correct": false
+    },
+    {
+        "id": 95,
+        "type": "fuzzy",
+        "question": "2021年深圳市振业的投资收益中：对联营企业和合营企业的投资收益是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "sql_pred": "select 投资收益中：对联营企业和合营企业的投资收益 from income_statement where 年度 = '2021' and 公司全称 = '深圳市振业';",
+        "sql_real": "select `投资收益中：对联营企业和合营企业的投资收益` from income_statement where `公司全称` like '%深圳市振业%' and 年度 like '%2021%'",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "186456969.15",
+        "answer_correct": false
+    },
+    {
+        "id": 96,
+        "type": "fuzzy",
+        "question": "2021年国药集团一致药业的销售商品、提供劳务收到的现金是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "sql_pred": "select 销售商品、提供劳务收到的现金 from cash_flow_statement where 年度 = 2021 and 公司全称 = '国药集团一致药业';",
+        "sql_real": "select `销售商品、提供劳务收到的现金` from cash_flow_statement where `公司全称` like '%国药集团一致药业%' and 年度 like '%2021%'",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "71597279035.48",
+        "answer_correct": false
+    },
+    {
+        "id": 97,
+        "type": "fuzzy",
+        "question": "2022年深圳市皇庭国际企业的所有者权益：资本公积：库存股是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 资本公积, 库存股 from income_statement where 公司全称 = '2022年深圳市皇庭国际企业';",
+        "sql_real": "select `所有者权益：资本公积：库存股` from balance_sheet where `公司全称` like '%深圳市皇庭国际企业%' and 截止日期 like '%2022%'",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "185064374.07",
+        "answer_correct": false
+    },
+    {
+        "id": 98,
+        "type": "fuzzy",
+        "question": "2021年深圳市全新好的收回投资收到的现金是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "sql_pred": "select 收回投资收到的现金 from cash_flow_statement where 公司全称 = '深圳市全新好' and 年度 = 2021;",
+        "sql_real": "select `收回投资收到的现金` from cash_flow_statement where `公司全称` like '%深圳市全新好%' and 年度 like '%2021%'",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "15533222.18",
+        "answer_correct": false
+    },
+    {
+        "id": 99,
+        "type": "fuzzy",
+        "question": "2022年泛海控股的所有者权益：实收资本（或股本）是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql_pred": "select 实收资本（或股本） from income_statement where 年度 = 2022 and 公司全称 = '泛海控股';",
+        "sql_real": "select `所有者权益：实收资本（或股本）` from balance_sheet where `公司全称` like '%泛海控股%' and 截止日期 like '%2022%'",
+        "sql_correct": false,
+        "answer_pred": "nan",
+        "answer_real": "5196200656.0",
+        "answer_correct": false
+    }
+]

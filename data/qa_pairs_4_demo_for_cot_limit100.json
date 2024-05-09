@@ -1,0 +1,51 @@
+[
+    {
+        "id": 0,
+        "type": "numerical reasoning: one step",
+        "question": "截止到2022-12-31，股票简称为农产品的公司的负债：其他应付款是多少？",
+        "tables": ["Balance_Sheet"],
+        "reasoning": "第一步，查询项目是`负债：其他应付款`；限制条件是`截止日期`='2022-12-31'和`股票简称`='农产品'。\n第二步，查找项目的名称`负债：其他应付款`在可用的表'Balance_Sheet'的列名`负债：其他应付款`中，因此，选定表'Balance_Sheet'使用精确查找。补全SQL部分语句'SELECT `负债：其他应付款` FROM Balance_Sheet'。\n第四步，限制条件的约束方式是`截止日期`和`股票简称`。`截止日期`在选定的表'Balance_Sheet'的列名`截止日期`中，`股票简称`在选定的表'Balance_Sheet'的列名`股票简称`中，因此使用精确查找。补全SQL部分语句'SELECT `负债：其他应付款` FROM Balance_Sheet WHERE `股票简称` = '农产品' AND `截止日期` = '2022-12-31''。\n最后，生成的SQL语句为：",
+        "sql": "SELECT `负债：其他应付款` FROM Balance_Sheet WHERE `股票简称` = '农产品' AND `截止日期` = '2022-12-31'",
+        "answer": "1136610957.36"
+    },
+    {
+        "id": 1,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为深科技的公司的资产负债率是多少？",
+        "tables": ["Balance_Sheet"],
+        "reasoning": "第一步，查询项目是`资产负债率`；限制条件是`截止日期`='2022-12-31'和`股票简称`='深科技'。\n第二步，查找项目的名称`资产负债率`不在任何可用的表的列中。\n第三步，`资产负债率`需要数值推理，需要的可用的列名为可用的表'Balance_Sheet'的列名`负债合计`和可用的表'Balance_Sheet'的列名`资产总计`，计算式为'负债合计 / 资产总计'。补全SQL部分语句为'SELECT 负债合计 / 资产总计 AS 资产负债率 FROM Balance_Sheet'\n第四步，限制条件的约束方式是`截止日期`和`股票简称`。在选定的表'Balance_Sheet'中，`截止日期`和`股票简称`均在其列名中，因此使用精确查找。补全SQL部分语句为'SELECT 负债合计 / 资产总计 AS 资产负债率 FROM Balance_Sheet WHERE 股票简称 = '深科技' AND 截止日期 = '2022-12-31''。\n最后，生成的SQL语句为：",
+        "sql": "SELECT 负债合计 / 资产总计 AS 资产负债率 FROM Balance_Sheet WHERE 股票简称 = '深科技' AND 截止日期 = '2022-12-31'",
+        "answer": "0.569896842984359"
+    },
+    {
+        "id": 2,
+        "type": "numerical reasoning: multi table",
+        "question": "2022年度，股票简称为方大集团的公司的总资产收益率是多少？",
+        "tables": ["Income_Statement", "Balance_Sheet"],
+        "reasoning": "第一步，查询项目是`总资产收益率`；限制条件是`年度`='2022'和`股票简称`='方大集团'。\n第二步，查找项目的名称`总资产收益率`不在任何可用的表的列中。\n第三步，`总资产收益率`需要数值推理，需要的可用的列名为可用的表'Income_Statement'的列名`净利润`和可用的表'Balance_Sheet'的列名`资产总计`，计算式为'净利润 / 资产总计'。补全SQL部分语句为'SELECT (SELECT 净利润 FROM Income_Statement) / (SELECT 资产总计 FROM Balance_Sheet) AS 总资产收益率'\n第四步，限制条件的约束方式是`年度`和`股票简称`。在选定的表'Income_Statement'中，`年度`和`股票简称`均在其列名中，因此使用精确查找。在选定的表'Balance_Sheet'中，`股票简称`在其列名中，因此使用精确查找；`年度`不在其列名中，且不是表操作，因此使用LIKE模糊查找，关联列名`截止日期`。补全SQL部分语句为'SELECT (SELECT 净利润 FROM Income_Statement WHERE 股票简称 = '方大集团' AND 年度 = '2022') / (SELECT 资产总计 FROM Balance_Sheet WHERE 股票简称 = '方大集团' AND 截止日期 LIKE '%2022%') AS 总资产收益率'。\n最后，生成的SQL语句为：",
+        "sql": "SELECT (SELECT 净利润 FROM Income_Statement WHERE 股票简称 = '方大集团' AND 年度 = '2022') / (SELECT 资产总计 FROM Balance_Sheet WHERE 股票简称 = '方大集团' AND 截止日期 LIKE '%2022%') AS 总资产收益率",
+        "answer": "0.022451968601371594"
+    },
+    {
+        "id": 3,
+        "type": "table reasoning",
+        "question": "2022年度，哪家公司在净利润上的值是最大的？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "reasoning": "第一步，查询项目是`公司全称`；限制条件是`年度`='2022'和`净利润`'最大'\n第二步，查找项目的名称`公司全称`在可用的列中，无选定表。补全SQL部分语句为'SELECT 公司全称'\n第四步，限制条件的约束方式是`年度`和`净利润`。在可用的表'Income_Statement'中，`年度`和`净利润`均在其列名中，因此使用精确查找。补全SQL部分语句为'SELECT 公司全称 FROM Income_Statement WHERE 年度 = '2022' ORDER BY 净利润 DESC LIMIT 1'。\n最后，生成的SQL语句为：",
+        "sql": "SELECT 公司全称 FROM Income_Statement WHERE 年度 = '2022' ORDER BY 净利润 DESC LIMIT 1",
+        "answer": "平安银行股份有限公司"
+    },
+    {
+        "id": 4,
+        "type": "fuzzy",
+        "question": "2022年深圳经济特区房地产的负债：租赁负债是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "reasoning": "第一步，查询项目是`负债：租赁负债`；限制条件是'2022'和'深圳经济特区房地产'。\n第二步，查找项目的名称`负债：租赁负债`在可用的表'Balance_Sheet'的列名`负债：其他应付款`中，因此，选定表'Balance_Sheet'使用精确查找。补全SQL部分语句'SELECT `负债：租赁负债` FROM Balance_Sheet'。\n第四步，限制条件是'2022'和'深圳经济特区房地产'。不确定限制条件的名称，且不是表操作，因此使用LIKE模糊查找，在选定的表'Balance_Sheet'中，'2022'关联列名`截止日期`，'深圳经济特区房地产'关联列名`公司全称`。补全SQL部分语句'SELECT `负债：租赁负债` FROM Balance_Sheet WHERE `公司全称` LIKE '%深圳经济特区房地产%' AND 截止日期 LIKE '%2022%''。\n最后，生成的SQL语句为：",
+        "sql": "SELECT `负债：租赁负债` FROM Balance_Sheet WHERE `公司全称` LIKE '%深圳经济特区房地产%' AND 截止日期 LIKE '%2022%'",
+        "answer": "53885.23"
+    }
+]

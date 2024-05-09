@@ -1,0 +1,772 @@
+[
+    {
+        "id": 0,
+        "type": "numerical reasoning: one step",
+        "question": "2021年度，股票简称为深赛格的公司的稀释每股收益是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "answer_pred": "0.0375",
+        "answer_real": "0.0375",
+        "answer_correct": true
+    },
+    {
+        "id": 1,
+        "type": "numerical reasoning: one step",
+        "question": "2022年度，股票简称为万科A的公司的营业收入是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "answer_pred": "503838367358.76",
+        "answer_real": "503838367358.76",
+        "answer_correct": true
+    },
+    {
+        "id": 2,
+        "type": "numerical reasoning: one step",
+        "question": "2021年度，股票代码为32的公司的投资活动产生的现金流出小计是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "answer_pred": "2011266109.57",
+        "answer_real": "2011266109.57",
+        "answer_correct": true
+    },
+    {
+        "id": 3,
+        "type": "numerical reasoning: one step",
+        "question": "2021年度，股票简称为深振业A的公司的归属少数股东的综合收益是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "answer_pred": "11,800,034.71",
+        "answer_real": "11800034.71",
+        "answer_correct": true
+    },
+    {
+        "id": 4,
+        "type": "numerical reasoning: one step",
+        "question": "2021年度，股票代码为40的公司的筹资活动现金流入小计是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "answer_pred": "筹资活动现金流入小计为664885613.1",
+        "answer_real": "664885613.1",
+        "answer_correct": true
+    },
+    {
+        "id": 5,
+        "type": "numerical reasoning: one step",
+        "question": "截止到2021-12-31，股票代码为34的公司的资产：应收款项融资是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "286,643,309.73",
+        "answer_real": "286643309.73",
+        "answer_correct": true
+    },
+    {
+        "id": 6,
+        "type": "numerical reasoning: one step",
+        "question": "2021年度，股票代码为58的公司的取得借款收到的现金是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "answer_pred": "368667132.95",
+        "answer_real": "126198418.0",
+        "answer_correct": false
+    },
+    {
+        "id": 7,
+        "type": "numerical reasoning: one step",
+        "question": "2021年度，股票简称为深物业A的公司的营业收入是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "answer_pred": "4911120528.33",
+        "answer_real": "4911120528.33",
+        "answer_correct": true
+    },
+    {
+        "id": 8,
+        "type": "numerical reasoning: one step",
+        "question": "2022年度，股票代码为8的公司的经营活动现金流入小计是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "answer_pred": "经营活动现金流入小计为 2711666817.55",
+        "answer_real": "2711666817.55",
+        "answer_correct": true
+    },
+    {
+        "id": 9,
+        "type": "numerical reasoning: one step",
+        "question": "2022年度，股票代码为5的公司的分配股利、利润或偿付利息支付的现金是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "answer_pred": "10167757.36",
+        "answer_real": "10167757.36",
+        "answer_correct": true
+    },
+    {
+        "id": 10,
+        "type": "numerical reasoning: one step",
+        "question": "2021年度，股票简称为深康佳A的公司的筹资活动现金流入小计是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "answer_pred": "筹资活动现金流入小计为 24829208403.38",
+        "answer_real": "24829208403.38",
+        "answer_correct": true
+    },
+    {
+        "id": 11,
+        "type": "numerical reasoning: one step",
+        "question": "2021年度，股票简称为华控赛格的公司的信用减值损失是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "answer_pred": "-4214984.99",
+        "answer_real": "-4214984.99",
+        "answer_correct": true
+    },
+    {
+        "id": 12,
+        "type": "numerical reasoning: one step",
+        "question": "2021年度，股票简称为皇庭国际的公司的支付的各项税费是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "answer_pred": "67886754.99",
+        "answer_real": "67886754.99",
+        "answer_correct": true
+    },
+    {
+        "id": 13,
+        "type": "numerical reasoning: one step",
+        "question": "2022年度，股票代码为66的公司的偿还债务支付的现金是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "answer_pred": "8290971837.69",
+        "answer_real": "8290971837.69",
+        "answer_correct": true
+    },
+    {
+        "id": 14,
+        "type": "numerical reasoning: one step",
+        "question": "截止到2021-12-31，股票简称为深中华A的公司的资产：其他非流动资产是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "400000.0",
+        "answer_real": "400000.0",
+        "answer_correct": true
+    },
+    {
+        "id": 15,
+        "type": "numerical reasoning: one step",
+        "question": "2022年度，股票代码为1的公司的支付的各项税费是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "answer_pred": "2022年度，股票代码为1的公司的支付的各项税费是51124000000.0。",
+        "answer_real": "27713000000.0",
+        "answer_correct": false
+    },
+    {
+        "id": 16,
+        "type": "numerical reasoning: one step",
+        "question": "2022年度，股票简称为深纺织A的公司的综合收益总额是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "answer_pred": "101587363.18",
+        "answer_real": "101587363.18",
+        "answer_correct": true
+    },
+    {
+        "id": 17,
+        "type": "numerical reasoning: one step",
+        "question": "2021年度，股票代码为5的公司的营业外收入是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "answer_pred": "194565165.0",
+        "answer_real": "194565165.0",
+        "answer_correct": true
+    },
+    {
+        "id": 18,
+        "type": "numerical reasoning: one step",
+        "question": "2022年度，股票简称为深物业A的公司的取得借款收到的现金是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "answer_pred": "285589674.44",
+        "answer_real": "285589674.44",
+        "answer_correct": true
+    },
+    {
+        "id": 19,
+        "type": "numerical reasoning: one step",
+        "question": "截止到2022-12-31，股票代码为5的公司的资产：应收款项融资是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "3,533,004.31",
+        "answer_real": "3533004.31",
+        "answer_correct": true
+    },
+    {
+        "id": 20,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2021-12-31，股票简称为万科A的公司的资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "0.20",
+        "answer_real": "0.7973975799244908",
+        "answer_correct": false
+    },
+    {
+        "id": 21,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2021-12-31，股票简称为深圳华强的公司的资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "56.89%",
+        "answer_real": "0.5689126702509406",
+        "answer_correct": true
+    },
+    {
+        "id": 22,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为美丽生态的公司的净资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "74.23%",
+        "answer_real": "3.041248848990086",
+        "answer_correct": false
+    },
+    {
+        "id": 23,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2021-12-31，股票简称为大悦城的公司的资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "资产负债率为0.7549",
+        "answer_real": "0.7551267481944259",
+        "answer_correct": true
+    },
+    {
+        "id": 24,
+        "type": "numerical reasoning: multi step",
+        "question": "2021年度，股票简称为中洲控股的公司的成本收入比是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "answer_pred": "0.8997",
+        "answer_real": "0.9000835184660075",
+        "answer_correct": true
+    },
+    {
+        "id": 25,
+        "type": "numerical reasoning: multi step",
+        "question": "2022年度，股票简称为京基智农的公司的成本收入比是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "answer_pred": "0.82",
+        "answer_real": "0.8185769212052807",
+        "answer_correct": true
+    },
+    {
+        "id": 26,
+        "type": "numerical reasoning: multi step",
+        "question": "2021年度，股票简称为平安银行的公司的成本收入比是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "answer_pred": "0.2934",
+        "answer_real": "0.2927153256229964",
+        "answer_correct": true
+    },
+    {
+        "id": 27,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为中国长城的公司的资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "0.5614",
+        "answer_real": "0.5616311114215363",
+        "answer_correct": true
+    },
+    {
+        "id": 28,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2021-12-31，股票简称为深纺织A的公司的净资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "0.71",
+        "answer_real": "0.4067882012234693",
+        "answer_correct": false
+    },
+    {
+        "id": 29,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为泛海控股的公司的资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "99.15%",
+        "answer_real": "0.9914975701900035",
+        "answer_correct": true
+    },
+    {
+        "id": 30,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2021-12-31，股票简称为深康佳A的公司的资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "0.7447",
+        "answer_real": "0.7441737442577003",
+        "answer_correct": true
+    },
+    {
+        "id": 31,
+        "type": "numerical reasoning: multi step",
+        "question": "2021年度，股票简称为神州高铁的公司的成本收入比是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "answer_pred": "1. (股票简称, 神州高铁); (年度, 2021); (营业总收入, 2214804536.96); (营业总成本, 2463255851.04) \nCost-to-Income Ratio: 1.11",
+        "answer_real": "1.1121775352785848",
+        "answer_correct": true
+    },
+    {
+        "id": 32,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2021-12-31，股票简称为华控赛格的公司的净资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "0.84",
+        "answer_real": "5.121207455990476",
+        "answer_correct": false
+    },
+    {
+        "id": 33,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为皇庭国际的公司的资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "0.21",
+        "answer_real": "0.7928162735270822",
+        "answer_correct": false
+    },
+    {
+        "id": 34,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为华锦股份的公司的净资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "49.9%",
+        "answer_real": "1.1607464133984502",
+        "answer_correct": false
+    },
+    {
+        "id": 35,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2021-12-31，股票简称为美丽生态的公司的净资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "81.31%",
+        "answer_real": "4.344244353517529",
+        "answer_correct": false
+    },
+    {
+        "id": 36,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2021-12-31，股票简称为深华发A的公司的净资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "47.95%",
+        "answer_real": "0.9214791007401255",
+        "answer_correct": false
+    },
+    {
+        "id": 37,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2021-12-31，股票简称为东旭蓝天的公司的资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "55.77%",
+        "answer_real": "0.5571424428624323",
+        "answer_correct": true
+    },
+    {
+        "id": 38,
+        "type": "numerical reasoning: multi step",
+        "question": "2022年度，股票简称为深华发A的公司的成本收入比是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "answer_pred": "0.021",
+        "answer_real": "0.9797742746563922",
+        "answer_correct": false
+    },
+    {
+        "id": 39,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为平安银行的公司的资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "资产负债率为0.0809",
+        "answer_real": "0.9183164791072616",
+        "answer_correct": false
+    },
+    {
+        "id": 40,
+        "type": "numerical reasoning: multi step",
+        "question": "2022年度，股票简称为中洲控股的公司的成本收入比是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "answer_pred": "0.915",
+        "answer_real": "0.9149494272032258",
+        "answer_correct": true
+    },
+    {
+        "id": 41,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为深纺织A的公司的资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "0.282",
+        "answer_real": "0.2823671451483429",
+        "answer_correct": true
+    },
+    {
+        "id": 42,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为东旭蓝天的公司的资产总计同比增长率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "-2.60%",
+        "answer_real": "-0.025976920822298258",
+        "answer_correct": true
+    },
+    {
+        "id": 43,
+        "type": "numerical reasoning: multi step",
+        "question": "2022年度，股票简称为飞亚达的公司的成本收入比是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "answer_pred": "0.92",
+        "answer_real": "0.9193405125034879",
+        "answer_correct": true
+    },
+    {
+        "id": 44,
+        "type": "numerical reasoning: multi step",
+        "question": "2022年度股票简称为深深房A的公司的筹资活动现金流入小计同比增长率是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "answer_pred": "-58.16%",
+        "answer_real": "-0.5815017419489982",
+        "answer_correct": true
+    },
+    {
+        "id": 45,
+        "type": "numerical reasoning: multi step",
+        "question": "2022年度股票简称为德赛电池的公司的取得借款收到的现金同比增长率是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "answer_pred": "62.1%",
+        "answer_real": "0.6165793809927834",
+        "answer_correct": true
+    },
+    {
+        "id": 46,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为国药一致的公司的资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "54.36%",
+        "answer_real": "0.5437202948771775",
+        "answer_correct": true
+    },
+    {
+        "id": 47,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为北方国际的公司的净资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "0.58",
+        "answer_real": "1.5799867407542731",
+        "answer_correct": false
+    },
+    {
+        "id": 48,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为中集集团的公司的资产：应收票据净额同比增长率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "-32.6%",
+        "answer_real": "-0.3257557217121253",
+        "answer_correct": true
+    },
+    {
+        "id": 49,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为华联控股的公司的资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "0.3221",
+        "answer_real": "0.3222535740015797",
+        "answer_correct": true
+    },
+    {
+        "id": 80,
+        "type": "table reasoning",
+        "question": "2022年度，哪家公司在净利润上的值是最小的？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "answer_pred": "大悦城控股集团股份有限公司",
+        "answer_real": "泛海控股股份有限公司",
+        "answer_correct": false
+    },
+    {
+        "id": 81,
+        "type": "table reasoning",
+        "question": "截止到2022-12-31，哪家公司在所有者权益：盈余公积上的值是最大的？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "华侨城A",
+        "answer_real": "万科企业股份有限公司",
+        "answer_correct": false
+    },
+    {
+        "id": 82,
+        "type": "table reasoning",
+        "question": "截止到2022-12-31，哪家公司在所有者权益：实收资本（或股本）上的值是最小的？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "飞亚达精密科技股份有限公司",
+        "answer_real": "深圳国华网安科技股份有限公司",
+        "answer_correct": false
+    },
+    {
+        "id": 83,
+        "type": "table reasoning",
+        "question": "截止到2022-12-31，哪家公司在所有者权益：未分配利润上的值是最小的？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "泛海控股",
+        "answer_real": "泛海控股股份有限公司",
+        "answer_correct": true
+    },
+    {
+        "id": 84,
+        "type": "table reasoning",
+        "question": "2022年度，哪家公司在筹资活动现金流出小计上的值是最大的？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "answer_pred": "深圳华侨城股份有限公司",
+        "answer_real": "平安银行股份有限公司",
+        "answer_correct": false
+    },
+    {
+        "id": 85,
+        "type": "table reasoning",
+        "question": "截止到2022-12-31，哪家公司在资产：递延所得税资产上的值是最小的？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "全新好",
+        "answer_real": "深圳市全新好股份有限公司",
+        "answer_correct": true
+    },
+    {
+        "id": 86,
+        "type": "table reasoning",
+        "question": "2022年度，哪家公司在综合收益总额上的值是最大的？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "answer_pred": "中兴通讯股份有限公司",
+        "answer_real": "平安银行股份有限公司",
+        "answer_correct": false
+    },
+    {
+        "id": 87,
+        "type": "table reasoning",
+        "question": "2022年度，哪家公司在信用减值损失上的值是最大的？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "answer_pred": "深圳市皇庭国际企业股份有限公司",
+        "answer_real": "深圳市中金岭南有色金属股份有限公司",
+        "answer_correct": false
+    },
+    {
+        "id": 88,
+        "type": "table reasoning",
+        "question": "2022年度，哪家公司在经营活动现金流入小计上的值是最大的？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "answer_pred": "国药集团一致药业股份有限公司",
+        "answer_real": "平安银行股份有限公司",
+        "answer_correct": false
+    },
+    {
+        "id": 89,
+        "type": "table reasoning",
+        "question": "2022年度，哪家公司在支付给职工以及为职工支付的现金上的值是最小的？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "answer_pred": "深中华A",
+        "answer_real": "深圳中华自行车(集团)股份有限公司",
+        "answer_correct": true
+    },
+    {
+        "id": 90,
+        "type": "fuzzy",
+        "question": "2021年深圳华侨城的投资活动产生的现金流量净额是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "answer_pred": "-3944707567.55",
+        "answer_real": "-3944707567.55",
+        "answer_correct": true
+    },
+    {
+        "id": 91,
+        "type": "fuzzy",
+        "question": "2021年深圳市深粮控股的负债：一年内到期的非流动负债是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "22828198143.29",
+        "answer_real": "128732475.16",
+        "answer_correct": false
+    },
+    {
+        "id": 92,
+        "type": "fuzzy",
+        "question": "2021年深圳能源集团的资产：无形资产净额是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "11923998487.21",
+        "answer_real": "16446469048.97",
+        "answer_correct": false
+    },
+    {
+        "id": 93,
+        "type": "fuzzy",
+        "question": "2021年深圳华强实业的收到其他与筹资活动有关的现金是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "answer_pred": "2021年深圳华强实业的收到其他与筹资活动有关的现金是12608472156.55。",
+        "answer_real": "262017.32",
+        "answer_correct": false
+    },
+    {
+        "id": 94,
+        "type": "fuzzy",
+        "question": "2021年深圳国华网安科技的资产减值损失是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "answer_pred": "资产减值损失为 -556578488.37",
+        "answer_real": "-556578488.37",
+        "answer_correct": true
+    },
+    {
+        "id": 95,
+        "type": "fuzzy",
+        "question": "2021年深圳市振业的投资收益中：对联营企业和合营企业的投资收益是多少？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "answer_pred": "2021年深圳市振业的投资收益中：对联营企业和合营企业的投资收益是4888728689.55。",
+        "answer_real": "186456969.15",
+        "answer_correct": false
+    },
+    {
+        "id": 96,
+        "type": "fuzzy",
+        "question": "2021年国药集团一致药业的销售商品、提供劳务收到的现金是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "answer_pred": "100959093480.14",
+        "answer_real": "71597279035.48",
+        "answer_correct": false
+    },
+    {
+        "id": 97,
+        "type": "fuzzy",
+        "question": "2022年深圳市皇庭国际企业的所有者权益：资本公积：库存股是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "1291800290.12, 234980695.31, 50759806.16, 474891101.51, 1143840.18, 185064374.07, 1041515155.83",
+        "answer_real": "185064374.07",
+        "answer_correct": false
+    },
+    {
+        "id": 98,
+        "type": "fuzzy",
+        "question": "2021年深圳市全新好的收回投资收到的现金是多少？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "answer_pred": "15533222.18",
+        "answer_real": "15533222.18",
+        "answer_correct": true
+    },
+    {
+        "id": 99,
+        "type": "fuzzy",
+        "question": "2022年泛海控股的所有者权益：实收资本（或股本）是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "answer_pred": "11630709471.0",
+        "answer_real": "5196200656.0",
+        "answer_correct": false
+    }
+]

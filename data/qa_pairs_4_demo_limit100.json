@@ -1,0 +1,53 @@
+[
+    {
+        "id": 0,
+        "type": "numerical reasoning: one step",
+        "question": "截止到2022-12-31，股票简称为农产品的公司的负债：其他应付款是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql": "SELECT `负债：其他应付款` FROM Balance_Sheet WHERE `股票简称` = '农产品' AND `截止日期` = '2022-12-31'",
+        "answer": "1136610957.36"
+    },
+    {
+        "id": 1,
+        "type": "numerical reasoning: multi step",
+        "question": "截止到2022-12-31，股票简称为深科技的公司的资产负债率是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql": "SELECT 负债合计 / 资产总计 AS 资产负债率 FROM Balance_Sheet WHERE 股票简称 = '深科技' AND 截止日期 = '2022-12-31'",
+        "answer": "0.569896842984359"
+    },
+    {
+        "id": 2,
+        "type": "numerical reasoning: multi table",
+        "question": "2022年度，股票简称为方大集团的公司的总资产收益率是多少？",
+        "tables": [
+            "Income_Statement",
+            "Balance_Sheet"
+        ],
+        "sql": "SELECT (SELECT 净利润 FROM Income_Statement WHERE 股票简称 = '方大集团' AND 年度 = '2022') / (SELECT 资产总计 FROM Balance_Sheet WHERE 股票简称 = '方大集团' AND 截止日期 LIKE '%2022%') AS 总资产收益率",
+        "answer": "0.022451968601371594"
+    },
+    {
+        "id": 3,
+        "type": "table reasoning",
+        "question": "2022年度，哪家公司在净利润上的值是最大的？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "sql": "SELECT 公司全称 FROM Income_Statement WHERE 年度 = '2022' ORDER BY 净利润 DESC LIMIT 1",
+        "answer": "平安银行股份有限公司"
+    },
+    {
+        "id": 4,
+        "type": "fuzzy",
+        "question": "2022年深圳经济特区房地产的负债：租赁负债是多少？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql": "SELECT `负债：租赁负债` FROM Balance_Sheet WHERE `公司全称` LIKE '%深圳经济特区房地产%' AND 截止日期 LIKE '%2022%'",
+        "answer": "53885.23"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "id": 0,
+        "type": "table reasoning",
+        "question": "2022年度，哪家公司在净利润上的值是最大的？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "sql": "SELECT 公司全称 FROM Income_Statement WHERE 年度 = '2022' ORDER BY 净利润 DESC LIMIT 1",
+        "answer": "平安银行股份有限公司"
+    }
+]

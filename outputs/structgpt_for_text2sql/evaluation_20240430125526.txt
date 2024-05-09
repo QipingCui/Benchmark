@@ -1,0 +1,9 @@
+Answer Accuracy: 45.00%
+SQL Accuracy: 0.00%
+Accuracy by Question Type:
+                               type  answer_correct  sql_correct
+0                             fuzzy        0.000000          0.0
+1   numerical reasoning: multi step        0.400000          0.0
+2  numerical reasoning: multi table        0.000000          0.0
+3     numerical reasoning: one step        0.850000          0.0
+4                   table reasoning        1.000000          0.0

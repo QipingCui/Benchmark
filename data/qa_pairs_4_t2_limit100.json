@@ -1,0 +1,102 @@
+[
+    {
+        "id": 0,
+        "type": "table reasoning",
+        "question": "2022年度，哪家公司在净利润上的值是最小的？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "sql": "SELECT 公司全称 FROM Income_Statement WHERE 年度 = '2022' ORDER BY 净利润 ASC LIMIT 1",
+        "answer": "泛海控股股份有限公司"
+    },
+    {
+        "id": 1,
+        "type": "table reasoning",
+        "question": "截止到2022-12-31，哪家公司在所有者权益：盈余公积上的值是最大的？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql": "SELECT 公司全称 FROM Balance_Sheet WHERE 截止日期 = '2022-12-31' ORDER BY 所有者权益：盈余公积 DESC LIMIT 1",
+        "answer": "万科企业股份有限公司"
+    },
+    {
+        "id": 2,
+        "type": "table reasoning",
+        "question": "截止到2022-12-31，哪家公司在所有者权益：实收资本（或股本）上的值是最小的？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql": "SELECT 公司全称 FROM Balance_Sheet WHERE 截止日期 = '2022-12-31' ORDER BY 所有者权益：实收资本（或股本） ASC LIMIT 1",
+        "answer": "深圳国华网安科技股份有限公司"
+    },
+    {
+        "id": 3,
+        "type": "table reasoning",
+        "question": "截止到2022-12-31，哪家公司在所有者权益：未分配利润上的值是最小的？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql": "SELECT 公司全称 FROM Balance_Sheet WHERE 截止日期 = '2022-12-31' ORDER BY 所有者权益：未分配利润 ASC LIMIT 1",
+        "answer": "泛海控股股份有限公司"
+    },
+    {
+        "id": 4,
+        "type": "table reasoning",
+        "question": "2022年度，哪家公司在筹资活动现金流出小计上的值是最大的？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "sql": "SELECT 公司全称 FROM Cash_Flow_Statement WHERE 年度 = '2022' ORDER BY 筹资活动现金流出小计 DESC LIMIT 1",
+        "answer": "平安银行股份有限公司"
+    },
+    {
+        "id": 5,
+        "type": "table reasoning",
+        "question": "截止到2022-12-31，哪家公司在资产：递延所得税资产上的值是最小的？",
+        "tables": [
+            "Balance_Sheet"
+        ],
+        "sql": "SELECT 公司全称 FROM Balance_Sheet WHERE 截止日期 = '2022-12-31' ORDER BY 资产：递延所得税资产 ASC LIMIT 1",
+        "answer": "深圳市全新好股份有限公司"
+    },
+    {
+        "id": 6,
+        "type": "table reasoning",
+        "question": "2022年度，哪家公司在综合收益总额上的值是最大的？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "sql": "SELECT 公司全称 FROM Income_Statement WHERE 年度 = '2022' ORDER BY 综合收益总额 DESC LIMIT 1",
+        "answer": "平安银行股份有限公司"
+    },
+    {
+        "id": 7,
+        "type": "table reasoning",
+        "question": "2022年度，哪家公司在信用减值损失上的值是最大的？",
+        "tables": [
+            "Income_Statement"
+        ],
+        "sql": "SELECT 公司全称 FROM Income_Statement WHERE 年度 = '2022' ORDER BY 信用减值损失 DESC LIMIT 1",
+        "answer": "深圳市中金岭南有色金属股份有限公司"
+    },
+    {
+        "id": 8,
+        "type": "table reasoning",
+        "question": "2022年度，哪家公司在经营活动现金流入小计上的值是最大的？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "sql": "SELECT 公司全称 FROM Cash_Flow_Statement WHERE 年度 = '2022' ORDER BY 经营活动现金流入小计 DESC LIMIT 1",
+        "answer": "平安银行股份有限公司"
+    },
+    {
+        "id": 9,
+        "type": "table reasoning",
+        "question": "2022年度，哪家公司在支付给职工以及为职工支付的现金上的值是最小的？",
+        "tables": [
+            "Cash_Flow_Statement"
+        ],
+        "sql": "SELECT 公司全称 FROM Cash_Flow_Statement WHERE 年度 = '2022' ORDER BY 支付给职工以及为职工支付的现金 ASC LIMIT 1",
+        "answer": "深圳中华自行车(集团)股份有限公司"
+    }
+]

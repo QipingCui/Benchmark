@@ -1,0 +1,7 @@
+Answer Accuracy: 38.57%
+Accuracy by Question Type:
+                              type  answer_correct
+0                            fuzzy        0.300000
+1  numerical reasoning: multi step        0.366667
+2    numerical reasoning: one step        0.900000
+3                  table reasoning        0.300000
