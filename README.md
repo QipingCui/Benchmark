@@ -1,1 +1,15 @@
-# Benchmark
+# 大语言模型中结构化数据检索研究与实现
+
+结构化数据（例如：数据库表/知识图谱/图数据库等）查询作为一种重要的数据处理方式，广泛应用于数据分析、金融服务等多个领域。本论文针对金融财报数据查询领域，对基于大语言模型，用自然语言进行查询的问题进行了深入研究。
+
+目前专门针对金融财报领域的基准测试数据集较少。因此，本次研究首先构建了一个专门针对金融财报领域的基准测试。该数据集覆盖了2022年所有A股上市公司的资产负债表、利润表和现金流量表，包含230多个会计科目，涵盖了5200多家公司。本次研究工作还基于金融领域的规则，自动生成包括单步查询、多步查询、多表查询、表操作和模糊查询5种类型的问答对作为测试项，以全面评估查询系统的性能。
+
+基于上述基准测试数据集，本论文采用已有的Prompt方法进行了测试和分析。基线Prompt算法整体准确率大约为49\%，特别在处理复杂的多表查询时，基本方法面临的挑战。针对上述挑战，本论文设计了多种改进Prompt的方法，包括上下文提示、少量示例学习以及思维链提示。这些改进的方法旨在通过为模型提供更清晰的数据结构和查询逻辑指导，从而提升查询的准确性。实验结果表明，通过引入针对表名和列名的文本描述以及少量样本，改进在多步查询和多表查询中的处理能力，使基准测试的准确率提升到58\%。此外，通过实施思维链提示策略，基准测试准确率进一步提高到68\%，尤其是在多表查询的性能上取得了显著提升。当我们将上述Prompt改进方法进行结合时，准确率最终上升到了75\%。
+
+# Research and Implementation of Structured Data Retrieval in Large Language Models
+
+Structured data querying, such as database tables, knowledge graphs, and graph databases, serves as a crucial data processing method widely applied in various domains including data analysis and financial services. This paper delves into the problem of querying financial report data using natural language based on large language models.
+
+Currently, there is a scarcity of benchmark datasets specifically tailored for the financial report domain. Thus, this research firstly constructs a benchmark dataset specifically for financial report domain. This dataset covers the balance sheets, income statements, and cash flow statements of all A-share listed companies in 2022, containing over 230 accounting items and encompassing more than 5200 companies. Furthermore, this research automatically generates sets of questions and answers, including single-step queries, multi-step queries, multi-table queries, table operations, and fuzzy queries based on financial domain rules as test items to comprehensively evaluate the performance of querying systems.
+
+Based on the aforementioned benchmark dataset, this paper tests and analyzes using existing Prompt methods. The overall accuracy of the baseline Prompt algorithm is approximately 49\%, particularly facing challenges in handling complex multi-table queries. To address these challenges, various improved Prompt methods are proposed in this paper, including context prompts, few-shot learning, and mind-chain prompts. These improved methods aim to enhance query accuracy by providing clearer data structures and query logic guidance to the model. Experimental results demonstrate that by introducing textual descriptions for table names and column names as well as a few samples, the handling capabilities in multi-step queries and multi-table queries are improved, leading to an accuracy increase to 58\% in the benchmark test. Furthermore, by implementing the mind-chain prompt strategy, the benchmark test accuracy is further improved to 68\%, especially achieving significant improvements in the performance of multi-table queries. When combining the aforementioned Prompt improvement methods, the accuracy ultimately rises to 75\%.
